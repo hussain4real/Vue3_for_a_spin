@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Todos :todos="todos"></Todos>
+    <Todos todos_prop.sync="todos"></Todos>
   </div>
 </template>
 

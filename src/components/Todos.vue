@@ -1,7 +1,7 @@
 <template>
   <div class="m-4">
     <div v-for="todo in todos" :key="todo.id">
-      <TodoItem :todo="todo"></TodoItem>
+      <TodoItem todo_prop.sync="todo"></TodoItem>
     </div>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
     TodoItem,
   },
   props: {
-    todos: {
+    todos_prop: {
       type: Array,
       default: () => [],
     },

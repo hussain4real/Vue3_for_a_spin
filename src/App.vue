@@ -25,8 +25,12 @@
       class="border border-purple-400 rounded-lg pl-2 focus:border-none"
     />
   </div>
-  <div class>
-    <p id="canvas" class="border rounded-md border-black ml-6" @mousemove="updateXY">{{x}}, {{y}}</p>
+  <div class="w-3/4">
+    <p
+      id="canvas"
+      class="border rounded-md border-black ml-6 py-32 text-center"
+      @mousemove="updateXY"
+    >{{x}}, {{y}}</p>
   </div>
 </template>
 
@@ -64,10 +68,3 @@ export default {
 
 
 
-<style lang="css" scoped>
-#canvas {
-  width: 600px;
-  height: 300px;
-  text-align: center;
-}
-</style>
